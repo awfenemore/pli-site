@@ -31,7 +31,7 @@
         <span class="mr-2">Latest Release</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
-    </v-app-bar> -->
+    </v-app-bar>-->
 
     <v-content>
       <router-view></router-view>
@@ -40,24 +40,29 @@
     <div class="bot-border"></div>
 
     <v-footer color="#3d3d3d" min-height="80">
-      <img src="./assets/pli-grey-logo.svg" alt="Pli Logo" height="60" width="100" />
-      <div class="footer-left">
-        Pli is a website about design, interesting stories, and doing things a little better. Thanks for visiting.
-      </div>
-      <v-spacer></v-spacer>
-      <div class="footer-mid">
-        <router-link to="/">Home</router-link> | 
-        <router-link to="aboutpli">About Pli</router-link> | 
-        <router-link to="aboutme">About Me</router-link> | 
-        <router-link to="albumofthenow">Album of the Now</router-link> | 
-        <router-link to="aboutpli">Back to Top</router-link>                <!-- TODO send this to the top of the page, not another link -->
-      </div>
-      <v-spacer></v-spacer>
-      <div class="footer-right">
-        A Fenemore | {{ new Date().getFullYear() }}
-      </div>
-    </v-footer>
+      <v-row>
+        <v-col cols="2" md="2" >
+          <img src="./assets/pli-grey-logo.svg" alt="Pli Logo" height="60" width="100" />
+        </v-col>
 
+        <v-col cols="10" md="4" class="footer-left pt-8">   
+          Pli is a website about design, interesting stories, and doing things a little better. Thanks for visiting.
+        </v-col>
+
+        <v-col cols="12"  md="4" class="footer-mid pt-8">
+            <router-link to="/">Home</router-link> |
+            <router-link to="aboutpli">About Pli</router-link> |
+            <router-link to="aboutme">About Me</router-link> |
+            <router-link to="albumofthenow">Album of the Now</router-link> |
+            <router-link to="aboutpli">Back to Top</router-link>
+            <!-- TODO send this to the top of the page, not another link -->
+        </v-col>
+
+        <v-col cols="12"  md="2" class="footer-right pt-8">
+          A Fenemore | {{ new Date().getFullYear() }}
+        </v-col>
+      </v-row>
+    </v-footer>
   </v-app>
 </template>
 
