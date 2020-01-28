@@ -5,10 +5,26 @@ $pli-teal-light: #87fbed;
 $pli-orange: #FF5010;
 $pli-orange-light: #f96630;
 
+$pli-header-font: 'Bree Serif', serif;
 $pli-text-font: 'Montserrat', Arial, sans-serif;
+
 
 .v-application a {
     color: $pli-teal !important;    // Consider finding a better way to do this
+}
+
+// .v-toolbar {
+//     .v-toolbar__title img {
+//         margin-top: 40%;           //Surely not ideal
+//     }
+// }
+
+.v-app-bar {
+    font-family: $pli-header-font;
+    .v-toolbar__title {
+        color: $pli-white;
+        font-size: 32px;                //Rems?
+    }
 }
 
 .v-content {
@@ -20,11 +36,26 @@ $pli-text-font: 'Montserrat', Arial, sans-serif;
     .footer-left, .footer-mid, .footer-right {
         color: $pli-white;
         text-align: center;
+        padding-top: 32px;
     }
+    @media only screen and (max-width: 600px) {
+        .footer-left, .footer-mid, .footer-right {
+          font-size: 12px;
+          padding-top: 8px;
+        }
+      }
 }
+
+
 
 .bot-border {
     width: 100%;
     height: 2px;
     background-image: linear-gradient(to right, $pli-white, $pli-teal);
+}
+
+.top-border {
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, $pli-teal, $pli-white);
 }
