@@ -1,0 +1,17 @@
+@import 'Colours.scss';
+@import 'Fonts.scss';
+
+.v-footer {
+    font-family: $pli-text-font;
+    .footer-left, .footer-mid, .footer-right {
+        color: $pli-white;
+        text-align: center;
+        padding-top: 32px;
+    }
+    @media only screen and (max-width: 600px) {
+        .footer-left, .footer-mid, .footer-right {
+          font-size: 12px;
+          padding-top: 8px;
+        }
+      }
+}

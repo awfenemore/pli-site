@@ -1,0 +1,48 @@
+@import 'Colours.scss';
+@import 'Fonts.scss';
+
+.v-app-bar {
+    font-family: $pli-header-font;
+    max-height: 90px;
+    .v-toolbar__title {
+        color: $pli-white;
+        font-size: 32px;                //Rems?
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .v-app-bar {
+        max-height: 100px;
+    }
+    .menu {
+        &-pli, &-me {
+            margin-top: 8px;
+        }
+        &-stories {
+            margin-right: -15%;
+        }
+        &-col {
+            height: 30px;
+            width: 5vw;
+            padding: 0;
+        }
+        &-container {
+            margin: 0 0 0 -50%;
+            padding: 0 20px;
+        }      
+    }
+  }
+
+.menu-to-open {
+    transition: height 1s;
+}
+
+
+
+
+.album-otn {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
