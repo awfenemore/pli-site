@@ -2,13 +2,13 @@
   <v-app>
     <Header v-on:openProjects="projClick" v-on:openStories="storiesClick" />
 
-    <div :style="{ height: this.menuProj + 'px' }" class="menu-to-open">
-      Proj
-    </div>
+    <v-expand-transition>
+      <div v-show="this.isProjMenuOpen" class="menu-to-open">Proj</div>
+    </v-expand-transition>
 
-    <div :style="{ height: this.menuStories + 'px' }" class="menu-to-open">
-      Stories
-    </div>
+    <v-expand-transition>
+      <div v-show="this.isStoriesMenuOpen" class="menu-to-open">Stories</div>
+    </v-expand-transition>
 
     <div class="top-border"></div>
 
@@ -35,18 +35,30 @@ export default Vue.extend({
   },
   data() {
     return {
-      menuProj: 0,
-      menuStories: 0
+      isProjMenuOpen: false,
+      isStoriesMenuOpen: false
     };
   },
   methods: {
-    projClick: function() {
-      this.menuProj = 100;
-      // Working here. If one is already open then close it, and make them toggle to closed if open
-      // Change the button stylings on menu open
+    projClick(): void {
+      if (!this.isProjMenuOpen) {
+        if (this.isStoriesMenuOpen) {
+          this.isStoriesMenuOpen = false;
+        }
+        this.isProjMenuOpen = true;
+      } else {
+        this.isProjMenuOpen = false;
+      }
     },
-    storiesClick: function() {
-      this.menuStories = 100;
+    storiesClick(): void {
+      if (!this.isStoriesMenuOpen) {
+        if (this.isProjMenuOpen) {
+          this.isProjMenuOpen = false;
+        }
+        this.isStoriesMenuOpen = true;
+      } else {
+        this.isStoriesMenuOpen = false;
+      }
     }
   }
 });
