@@ -3,7 +3,7 @@
 
 .v-app-bar {
     font-family: $pli-header-font;
-    max-height: 90px;
+    max-height: 120px;
     .v-toolbar__title {
         color: $pli-white;
         font-size: 32px;                //Rems?
@@ -15,19 +15,12 @@
         max-height: 100px;
     }
     .menu {
-        &-pli, &-me {
-            margin-top: 8px;
-        }
-        &-stories {
-            margin-right: -15%;
-        }
         &-col {
             height: 30px;
             width: 5vw;
-            padding: 0;
+            padding: 0 !important;
         }
         &-container {
-            margin: 0 0 0 -50%;
             padding: 0 20px;
         }      
     }

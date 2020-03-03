@@ -3,7 +3,6 @@
 $menuButtonBorderWidth: 3;
 
 .pli-menu-button {
-  transform: scale(0.8);
   &:hover {
     .pli-menu-button-text {
       fill: $pli-grey;
@@ -15,30 +14,10 @@ $menuButtonBorderWidth: 3;
 }
 
 @media only screen and (max-width: 600px) {
-  .pli-menu-button {
-    transform: scale(0.5);
-  }
-//   .menu {
-//     &-projects {
-//         margin-right: -10%;
-//     }
-//     &-albums {
-//         margin-left: -10%;
-//     }
-//     &-pli {
-//         margin-right: -10%;
-//     }
-//   }
+
 }
 
-.menu-button {
-  &-left {
-    margin-right: -5%;
-  }
-  &-right {
-    margin-left: -5%;
-  }
-}
+
 
 svg:hover {
   cursor: pointer;
