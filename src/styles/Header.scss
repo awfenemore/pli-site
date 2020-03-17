@@ -37,5 +37,15 @@
     width: 100%;
     height: 100%;
     background-color: red;
+    display: flex;
+    flex-direction: column;
+    &-top {
+        flex: 0.8;
+    }
+    &-bot {
+        flex: 0.2;
+        text-align: center;
+        color: $pli-white;
+    }
 }
 

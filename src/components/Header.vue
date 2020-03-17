@@ -26,9 +26,16 @@
             </v-row>
         </v-col>
 
-        <v-col cols="0" md="2" class="d-none d-md-flex">
+        <v-col cols="0" md="2" class="d-none d-md-flex" style="padding: 0;">
             <!-- Album of the now placeholder -->
-            <div class="d-none d-md-flex album-otn"></div>
+            <div class="d-none d-md-flex album-otn">
+              <div class="album-otn-top">
+
+              </div>
+              <div class="album-otn-bot">
+                <h2>Album of the Now</h2>
+              </div>
+            </div>
         </v-col>
 
       </v-row>
@@ -38,6 +45,7 @@
 
 <script>
 import PliMenuButton from "./micro/PliMenuButtons.vue"
+import albums from "../data/albums.js";
 
 export default {
   name: "Header",
@@ -46,7 +54,8 @@ export default {
   }, 
   data() {
     return {
-      menuOpen: 0
+      menuOpen: 0,
+      albumOfTheNow: albums[0]
     };
   }
 };
