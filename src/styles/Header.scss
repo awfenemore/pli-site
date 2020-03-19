@@ -35,17 +35,19 @@
 
 .album-otn {
     width: 100%;
-    height: 100%;
-    background-color: red;
+    height: 80%;
     display: flex;
-    flex-direction: column;
-    &-top {
-        flex: 0.8;
+    flex-direction: row;
+    color: $pli-white;
+    &-left {
+        flex: 0.6;
     }
-    &-bot {
-        flex: 0.2;
-        text-align: center;
-        color: $pli-white;
+    &-right {
+        flex: 0.4;
+    }
+    &-image {
+        height: 100px;
+        width: 100px;
     }
 }
 

@@ -28,12 +28,14 @@
 
         <v-col cols="0" md="2" class="d-none d-md-flex" style="padding: 0;">
             <!-- Album of the now placeholder -->
-            <div class="d-none d-md-flex album-otn">
-              <div class="album-otn-top">
-
+            <div class="d-none d-md-flex album-otn mt-10 pt-3">
+              <div class="album-otn-left pt-2">
+                  <h4>Album of the Now</h4>
+                  <h5>{{albumOfTheNow.title}} - {{albumOfTheNow.artist}}</h5>
+                  <h5>Released: {{albumOfTheNow.release}}</h5>
               </div>
-              <div class="album-otn-bot">
-                <h2>Album of the Now</h2>
+              <div class="album-otn-right pl-2 pt-2">
+                  <a :href="albumOfTheNow.link"><img class="album-otn-image" src="../assets/albumImages/Tame_Impala_-_The_Slow_Rush.png"/></a>
               </div>
             </div>
         </v-col>
@@ -44,7 +46,7 @@
 </template>
 
 <script>
-import PliMenuButton from "./micro/PliMenuButtons.vue"
+import PliMenuButton from "./micro/PliMenuButtons.vue";
 import albums from "../data/albums.js";
 
 export default {
@@ -62,3 +64,4 @@ export default {
 </script>
 
 <style lang="scss" src="../styles/Header.scss"></style>
+

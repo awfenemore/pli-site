@@ -1,10 +1,10 @@
 const albums = [
   {
     title: "The Slow Rush",
-    band: "Tame Impala",
+    artist: "Tame Impala",
     release: "14/02/2020",
     link: "https://tameimpala.lnk.to/TheSlowRushWE",
-    image: "srcassetsalbumImages\theslowrush.jfif"
+    image: "../assets/albumImages/Tame_Impala_-_The_Slow_Rush.png"
   }
 ];
 
