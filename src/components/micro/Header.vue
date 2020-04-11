@@ -5,7 +5,7 @@
       <v-col cols="3" md="1" class="main-logo pt-12 px-2 pl-md-4">
         <router-link to="/" tag="span" style="cursor: pointer">
           <img
-            class="ml-0 ml-md-3 mt-5 mt-md-6 d-flex"
+            class="ml-0 ml-md-3 mt-5 mt-md-6 mt-lg-7 d-flex"
             src="../../assets/pli-grey-logo.svg"
             alt="Pli Logo"
             height="60"
@@ -16,13 +16,13 @@
 
       <v-col cols="0" md="3" class="d-none d-md-flex pt-md-12 mt-md-3">
         <v-toolbar-title
-          class="ml-4 ml-md-8 ml-lg-4 mt-9 mt-md-0 mt-lg-9 header-title"
+          class="ml-4 ml-md-8 ml-lg-4 mt-9 mt-md-0 mt-lg-10 header-title"
           >Design, Stories, Improvement</v-toolbar-title
         >
       </v-col>
 
       <v-col cols="9" md="8" lg="6" class="pl-0 pl-md-8 pr-2 pt-8 pt-md-12">
-        <v-row class="pt-6 px-md-0 menu-container">
+        <v-row class="pt-6 pt-lg-10 px-md-0 menu-container">
           <v-col
             class="d-none d-md-flex"
             cols=""
@@ -86,6 +86,9 @@
             <h4>Album of the Now</h4>
             <h5>{{ albumOfTheNow.title }} - {{ albumOfTheNow.artist }}</h5>
             <h5>Released: {{ albumOfTheNow.release }}</h5>
+            <a :href="albumOfTheNow.link"
+              ><h4 class="album-otn-store-link mt-2">Link</h4></a
+            >
           </div>
           <div class="album-otn-right pl-2 pt-2">
             <a :href="albumOfTheNow.link"

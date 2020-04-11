@@ -1,18 +1,28 @@
 <template>
   <v-app>
-    <Header v-on:openProjects="projClick" v-on:openStories="storiesClick" />
-
-    <v-expand-transition>
-      <div v-show="this.isProjMenuOpen" class="menu-to-open">Proj</div>
-    </v-expand-transition>
-
-    <v-expand-transition>
-      <div v-show="this.isStoriesMenuOpen" class="menu-to-open">Stories</div>
-    </v-expand-transition>
+    <Header
+      v-on:openProjects="projClick"
+      v-on:openStories="storiesClick"
+      id="top"
+    />
 
     <div class="top-border"></div>
 
-    <v-content>
+    <v-expand-transition>
+      <div v-show="this.isProjMenuOpen" class="projects-menu">
+        <div class="inner-menu px-4 py-4">Projects</div>
+        <div class="bot-border"></div>
+      </div>
+    </v-expand-transition>
+
+    <v-expand-transition>
+      <div v-show="this.isStoriesMenuOpen" class="stories-menu">
+        <div class="inner-menu px-4 py-4">Stories</div>
+        <div class="bot-border"></div>
+      </div>
+    </v-expand-transition>
+
+    <v-content class="content">
       <router-view></router-view>
     </v-content>
 

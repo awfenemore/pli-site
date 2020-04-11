@@ -4,6 +4,8 @@
 .v-app-bar {
     font-family: $pli-header-font;
     max-height: 120px;
+    min-height: 120px;
+    
     .v-toolbar__title {
         color: $pli-white;
         font-size: 32px;                //Rems?
@@ -13,6 +15,7 @@
 @media only screen and (max-width: 600px) {
     .v-app-bar {
         max-height: 100px;
+        min-height: 100px;
     }
     .menu {
         &-col {
@@ -25,11 +28,6 @@
         }      
     }
   }
-
-.menu-to-open {
-    transition: height 1s;
-}
-
 
 
 
@@ -48,6 +46,10 @@
     &-image {
         height: 100px;
         width: 100px;
+    }
+    &-store-link {
+        color: $pli-orange;
+        text-decoration: underline;
     }
 }
 

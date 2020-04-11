@@ -20,8 +20,7 @@
         <router-link to="aboutpli">About Pli</router-link> |
         <router-link to="aboutme">About Me</router-link> |
         <router-link to="albumofthenow">Album of the Now</router-link> |
-        <router-link to="aboutpli">Back to Top</router-link>
-        <!-- TODO send this to the top of the page, not another link -->
+        <a href="#top">Back to Top</a>
       </v-col>
 
       <v-col cols="12" md="2" class="footer-right">
