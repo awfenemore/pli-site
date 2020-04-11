@@ -1,31 +1,30 @@
-@import 'Colours.scss';
-@import 'Type.scss';
+@import "Colours.scss";
+@import "Type.scss";
 
 .v-application a {
-    color: $pli-teal !important;    // Consider finding a better way to do this
+  color: $pli-teal !important; // Consider finding a better way to do this
 }
 
 .v-content {
-    background-color: $pli-grey;
-    &__wrap {
-        padding: 5vh 10vw;
-    }
+  background-color: $pli-grey;
+  &__wrap {
+    padding: 5vh 10vw;
+  }
 }
 @media only screen and (max-width: 600px) {
-    .v-content__wrap {
-        padding: 2vh 7vw;
-    }
+  .v-content__wrap {
+    padding: 2vh 7vw;
   }
-
+}
 
 .bot-border {
-    width: 100%;
-    height: 2px;
-    background-image: linear-gradient(to right, $pli-white, $pli-teal);
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(to right, $pli-white, $pli-teal);
 }
 
 .top-border {
-    width: 100%;
-    height: 2px;
-    background-image: linear-gradient(to right, $pli-teal, $pli-white);
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(to right, $pli-teal, $pli-white);
 }

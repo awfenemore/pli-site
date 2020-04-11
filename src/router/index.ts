@@ -1,9 +1,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
-import AboutPli from "../views/AboutPli.vue";
-import AboutMe from "../views/AboutMe.vue";
-import AlbumoftheNow from "../views/AlbumoftheNow.vue"
+import Home from "../components/primary/Home.vue";
+import AboutPli from "../components/primary/AboutPli.vue";
+import AboutMe from "../components/primary/AboutMe.vue";
+import AlbumoftheNow from "../components/primary/AlbumoftheNow.vue";
 
 Vue.use(VueRouter);
 
@@ -31,7 +31,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   routes
 });
 

@@ -1,6 +1,51 @@
-@import 'Colours.scss';
+@import "Colours.scss";
+@import "Fonts.scss";
+
+// Desktop default - it just isnt really made to be read slowly on your phone. You'll be ok
+h1 {
+  font-weight: normal;
+  color: $pli-white;
+  font-family: $pli-header-font;
+  font-size: 42px;
+}
+
+h3 {
+  font-weight: 500;
+  color: $pli-teal;
+  font-family: $pli-header-font;
+  font-size: 24px;
+}
 
 h5 {
-    font-weight: normal;
-    color: $pli-white;
+  font-weight: normal;
+  color: $pli-white;
+}
+
+p {
+  font-weight: 200;
+  color: $pli-white;
+  font-family: $pli-text-font;
+  font-size: 16px;
+}
+
+// Tablet
+@media only screen and (min-width: 600px) and (max-width: 1264px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
 }
