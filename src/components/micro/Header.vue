@@ -1,6 +1,5 @@
 <template>
   <v-app-bar flat color="#3d3d3d">
-    <!-- to make smaller on mobile-->
     <v-row>
       <v-col cols="3" md="1" class="main-logo pt-12 px-2 pl-md-4">
         <router-link to="/" tag="span" style="cursor: pointer">
