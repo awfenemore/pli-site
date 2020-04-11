@@ -13,12 +13,6 @@ $menuButtonBorderWidth: 3;
   }
 }
 
-@media only screen and (max-width: 600px) {
-
-}
-
-
-
 svg:hover {
   cursor: pointer;
 }
@@ -33,4 +27,18 @@ svg:hover {
   stroke: $pli-teal;
   transition: fill 0.2s ease-in-out;
   fill: #3d3d3d;
+}
+
+// Tablet
+@media only screen and (min-width: 600px) and (max-width: 1264px) {
+  .pli-menu-button-text {
+    font-size: 24px;
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 600px) {
+  .pli-menu-button-text {
+    font-size: 26px;
+  }
 }
