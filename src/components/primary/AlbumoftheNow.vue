@@ -15,7 +15,12 @@
           <v-card class="aotn-card my-8 px-12 py-10">
             <v-row>
               <v-col md="4">
-                <v-img height="300" width="300" :src="al.image"></v-img
+                <v-img
+                  height="300"
+                  width="300"
+                  :src="al.image"
+                  class="aotn-image"
+                ></v-img
               ></v-col>
               <v-col md="8" class="aotn-col-right">
                 <h3 class="aotn-title">{{ al.title }}</h3>

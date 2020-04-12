@@ -32,3 +32,36 @@
         height: 32px;
     }
 }
+
+// Tablet
+@media only screen and (min-width: 600px) and (max-width: 1264px) {
+    .aotn-image {
+        width: 200px !important;
+        height: auto !important;
+    }
+    .aotn-title, .aotn-artist {
+        font-size: 28px;
+    }
+    .aotn-release-date {
+        font-size: 14px;
+    }
+    .aotn-store-link {
+        font-size: 20px;
+    }
+  }
+  
+  // Mobile
+  @media only screen and (max-width: 600px) {
+    .aotn-image {
+        width: 80vw !important;
+        height: auto !important;
+    }
+    .aotn-title, .aotn-artist {
+        font-size: 24px;
+    }
+    .aotn-release-date {
+        font-size: 14px;
+    }
+  }
+  
+
