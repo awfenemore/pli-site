@@ -79,22 +79,19 @@
       </v-col>
 
       <v-col cols="0" md="2" class="d-none d-md-flex" style="padding: 0;">
-        <!-- Album of the now placeholder -->
         <div class="d-none d-lg-flex album-otn mt-10 pt-3">
           <div class="album-otn-left pt-2">
             <h4>Album of the Now</h4>
             <h5>{{ albumOfTheNow.title }} - {{ albumOfTheNow.artist }}</h5>
             <h5>Released: {{ albumOfTheNow.release }}</h5>
-            <a :href="albumOfTheNow.link"
-              ><h4 class="album-otn-store-link mt-2">Link</h4></a
+            <a :href="albumOfTheNow.link" target="_blank"
+              ><h4 class="album-otn-store-link">Link</h4></a
             >
           </div>
           <div class="album-otn-right pl-2 pt-2">
-            <a :href="albumOfTheNow.link"
-              ><img
-                class="album-otn-image"
-                src="../../assets/albumImages/Tame_Impala_-_The_Slow_Rush.png"
-            /></a>
+            <router-link to="albumofthenow"
+              ><img class="album-otn-image" :src="albumOfTheNow.image"
+            /></router-link>
           </div>
         </div>
       </v-col>

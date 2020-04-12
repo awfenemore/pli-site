@@ -1,0 +1,34 @@
+@import '../Colours.scss';
+
+.bg-grey {
+    background-color: $pli-grey;
+}
+
+.aotn-col-right {
+    padding: 0 !important;
+}
+
+.aotn-card {
+    background-color: $pli-grey-light !important;
+    border: 2px solid $pli-teal !important;
+}
+
+.aotn-title, .aotn-artist {
+    color: $pli-white;
+    font-size: 42px;
+}
+
+.aotn-release-date {
+    font-size: 18px;
+}
+
+.aotn-store-link {
+    text-decoration: underline;
+}
+
+.v-expansion-panel-header__icon {
+    i {
+        color: $pli-teal !important;
+        height: 32px;
+    }
+}

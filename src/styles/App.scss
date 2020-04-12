@@ -4,6 +4,9 @@
 
 .v-application a {
   color: $pli-teal !important; // Consider finding a better way to do this
+  &:visited {
+    color: $pli-orange;
+  }
 }
 
 .v-content {
