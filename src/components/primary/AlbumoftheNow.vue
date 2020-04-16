@@ -12,7 +12,7 @@
           ><h3>{{ al.title }} - {{ al.artist }}</h3></v-expansion-panel-header
         >
         <v-expansion-panel-content class="bg-grey">
-          <v-card class="aotn-card my-8 px-12 py-10">
+          <v-card class="aotn-card my-8 px-4 py-3 px-md-12 py-md-10">
             <v-row>
               <v-col md="4">
                 <v-img

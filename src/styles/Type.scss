@@ -30,6 +30,19 @@ p {
   font-size: 16px;
 }
 
+.img-caption {
+  width: 100%;
+  color: $pli-white;
+  font-family: $pli-text-font !important;
+  font-size: 14px;
+  padding-top: 4px;
+  padding-left: 4px;
+  background-color: $pli-grey-light;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top: 2px solid $pli-white;
+}
+
 // Tablet
 @media only screen and (min-width: 600px) and (max-width: 1264px) {
   h1 {
@@ -38,6 +51,10 @@ p {
 
   h3 {
     font-size: 24px;
+  }
+
+  .img-caption {
+    font-size: 12px;
   }
 }
 
@@ -49,5 +66,9 @@ p {
 
   h3 {
     font-size: 20px;
+  }
+
+  .img-caption {
+    font-size: 12px;
   }
 }

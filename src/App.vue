@@ -15,35 +15,19 @@
             <v-spacer class="d-none d-md-flex"></v-spacer>
             <v-col cols="3" md="2" class="mx-md-4 px-md-2 px-lg-8 mx-lg-8">
               <h4 class="menu-title mb-2 mb-lg-3">Product Design</h4>
-              <router-link to="/"
-                ><span class="menu-link" v-on:click="closeMenus"
-                  >Home</span
-                ></router-link
-              >
+              <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
             </v-col>
             <v-col cols="3" md="2" class="mx-md-4 px-md-2 px-lg-8 mx-lg-8">
               <h4 class="menu-title mb-2 mb-lg-3">Visual Design</h4>
-              <router-link to="/"
-                ><span class="menu-link" v-on:click="closeMenus"
-                  >Home</span
-                ></router-link
-              >
+              <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
             </v-col>
             <v-col cols="3" md="2" class="mx-md-4 px-md-2 px-lg-8 mx-lg-8">
               <h4 class="menu-title mb-2 mb-lg-3">Solution Design</h4>
-              <router-link to="/"
-                ><span class="menu-link" v-on:click="closeMenus"
-                  >Home</span
-                ></router-link
-              >
+              <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
             </v-col>
             <v-col cols="3" md="2" class="mx-md-4 px-md-2 px-lg-8 mx-lg-8">
-              <h4 class="menu-title mb-2 mb-lg-3">Other Design</h4>
-              <router-link to="/"
-                ><span class="menu-link" v-on:click="closeMenus"
-                  >Home</span
-                ></router-link
-              >
+              <h4 class="menu-title mb-2 mb-lg-3">Cetero</h4>
+              <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
             </v-col>
             <v-spacer class="d-none d-md-flex"></v-spacer>
           </v-row>
@@ -59,35 +43,23 @@
             <v-spacer class="d-none d-md-flex"></v-spacer>
             <v-col cols="3" md="2" class="mx-md-4 px-md-2 px-lg-8 mx-lg-8">
               <h4 class="menu-title mb-2 mb-lg-3">People</h4>
-              <router-link to="/"
-                ><span class="menu-link" v-on:click="closeMenus"
-                  >Home</span
-                ></router-link
-              >
+              <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
             </v-col>
             <v-col cols="3" md="2" class="mx-md-4 px-md-2 px-lg-8 mx-lg-8">
               <h4 class="menu-title mb-2 mb-lg-3">Animals</h4>
-              <router-link to="/"
+              <router-link to="/stories/springer"
                 ><span class="menu-link" v-on:click="closeMenus"
-                  >Home</span
+                  >Springer</span
                 ></router-link
               >
             </v-col>
             <v-col cols="3" md="2" class="mx-md-4 px-md-2 px-lg-8 mx-lg-8">
               <h4 class="menu-title mb-2 mb-lg-3">Sport</h4>
-              <router-link to="/"
-                ><span class="menu-link" v-on:click="closeMenus"
-                  >Home</span
-                ></router-link
-              >
+              <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
             </v-col>
             <v-col cols="3" md="2" class="mx-md-4 px-md-2 px-lg-8 mx-lg-8">
               <h4 class="menu-title mb-2 mb-lg-3">Cetero</h4>
-              <router-link to="/"
-                ><span class="menu-link" v-on:click="closeMenus"
-                  >Home</span
-                ></router-link
-              >
+              <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
             </v-col>
             <v-spacer class="d-none d-md-flex"></v-spacer>
           </v-row>
