@@ -34,7 +34,7 @@ Vue.use(VueRouter);
 const routes = [
   // Primary
   {
-    path: "/pli-site",
+    path: "/",
     name: "home",
     component: Home
   },
