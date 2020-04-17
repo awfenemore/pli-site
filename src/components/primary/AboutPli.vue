@@ -5,10 +5,11 @@
     <p>
       Pli is a site focused on design, interesting stories, and other things
       that interest, motivate, and inspire me. Pli is designed, developed,
-      written, and run by <router-link to="aboutme">one person</router-link> and
-      it really represents a collection of things that I like. There are no
-      rules on what will make it's way on to this site, but if I find it
-      interesting, then chances are someone else out there does too.
+      written, and run by
+      <router-link to="/aboutme">one person</router-link> and it really
+      represents a collection of things that I like. There are no rules on what
+      will make it's way on to this site, but if I find it interesting, then
+      chances are someone else out there does too.
     </p>
     <p>
       The word Pli is
@@ -31,7 +32,7 @@
     </p>
     <p>
       Should you feel like contacting me to talk about anything here, please
-      feel free to reach out to <router-link to="aboutme">me</router-link>.
+      feel free to reach out to <router-link to="/aboutme">me</router-link>.
     </p>
   </div>
 </template>

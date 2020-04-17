@@ -42,7 +42,7 @@
                 class="menu-button-left menu-stories"/></a
           ></v-col>
           <v-col class="menu-col" cols="4" md="2" style="padding: 0;"
-            ><router-link to="albumofthenow"
+            ><router-link to="/albumofthenow"
               ><PliMenuButton
                 buttonText="Albums"
                 class="menu-button-center menu-albums"/></router-link
@@ -53,7 +53,7 @@
             cols="4"
             md="2"
             style="padding: 0;"
-            ><router-link to="aboutpli"
+            ><router-link to="/aboutpli"
               ><PliMenuButton
                 buttonText="About Pli"
                 class="menu-button-right menu-pli"/></router-link
@@ -63,7 +63,7 @@
             cols="4"
             md="2"
             style="padding: 0;"
-            ><router-link to="aboutme"
+            ><router-link to="/aboutme"
               ><PliMenuButton
                 buttonText="About Me"
                 class="menu-button-right menu-me"/></router-link
@@ -89,7 +89,7 @@
             >
           </div>
           <div class="album-otn-right pl-2 pt-2">
-            <router-link to="albumofthenow"
+            <router-link to="/albumofthenow"
               ><img class="album-otn-image" :src="albumOfTheNow.image"
             /></router-link>
           </div>

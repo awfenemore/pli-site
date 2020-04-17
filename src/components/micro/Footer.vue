@@ -17,9 +17,9 @@
 
       <v-col cols="12" md="4" class="footer-mid">
         <router-link to="/">Home</router-link> |
-        <router-link to="aboutpli">About Pli</router-link> |
-        <router-link to="aboutme">About Me</router-link> |
-        <router-link to="albumofthenow">Album of the Now</router-link> |
+        <router-link to="/aboutpli">About Pli</router-link> |
+        <router-link to="/aboutme">About Me</router-link> |
+        <router-link to="/albumofthenow">Album of the Now</router-link> |
         <a href="#top">Back to Top</a>
       </v-col>
 
