@@ -24,9 +24,6 @@
             <p class="mt-2">
               A story about an inspirational orphaned orca returned to the wild.
             </p>
-            <router-link to="/stories/springer"
-              ><h3 class="latest-post-link">Link</h3></router-link
-            >
           </v-col>
         </v-row>
       </v-container>

@@ -125,3 +125,4 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" src="./styles/App.scss"></style>
+<style lang="scss" src="./styles/micro/shared.scss"></style>

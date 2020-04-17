@@ -1,0 +1,50 @@
+@import '../Type.scss';
+
+.preview-image {
+    width: 100%;
+    height: auto;
+}
+
+.latest-post {
+    background-color: $pli-grey-light !important;
+    border: 2px solid $pli-teal !important;
+}
+
+.latest-post-title {
+    color: $pli-white;
+    font-size: 24px;
+}
+
+.latest-post-desc {
+    font-size: 42px;
+    text-decoration: underline;
+}
+
+// Tablet
+@media only screen and (min-width: 600px) and (max-width: 1264px) {
+    .preview-image {
+        width: 200px !important;
+        height: auto !important;
+    }
+    .latest-post-desc {
+        font-size: 28px;
+    }
+    .latest-post-title {
+        font-size: 18px;
+    }
+  }
+  
+  // Mobile
+  @media only screen and (max-width: 600px) {
+    .preview-image {
+        width: 80vw !important;
+        height: auto !important;
+    }
+    .latest-post-desc {
+        font-size: 24px;
+    }
+    .latest-post-title {
+        font-size: 18px;
+    }
+  }
+  

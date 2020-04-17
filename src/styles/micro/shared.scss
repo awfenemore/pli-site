@@ -1,0 +1,17 @@
+@import '../Colours.scss';
+
+.in-short {
+    background-color: $pli-grey-light !important;
+}
+
+// Desktop
+@media only screen and (min-width: 1264px) {
+    .article-image {
+        max-width: 60vw;
+        margin: 32px 0; 
+        &-container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+  }
