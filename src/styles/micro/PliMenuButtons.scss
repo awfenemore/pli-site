@@ -11,22 +11,21 @@ $menuButtonBorderWidth: 3;
       fill: $pli-white;
     }
   }
+
+  &-text {
+    fill: $pli-teal;
+    transition: fill 0.2s ease-in-out;
+  }
+  &-border {
+    stroke-width: $menuButtonBorderWidth;
+    stroke: $pli-teal;
+    transition: fill 0.2s ease-in-out;
+    fill: $pli-grey;
+  }
 }
 
 svg:hover {
   cursor: pointer;
-}
-
-.pli-menu-button-text {
-  fill: $pli-teal;
-  transition: fill 0.2s ease-in-out;
-}
-
-.pli-menu-button-border {
-  stroke-width: $menuButtonBorderWidth;
-  stroke: $pli-teal;
-  transition: fill 0.2s ease-in-out;
-  fill: #3d3d3d;
 }
 
 // Tablet

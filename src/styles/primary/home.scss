@@ -8,16 +8,14 @@
 .latest-post {
     background-color: $pli-grey-light !important;
     border: 2px solid $pli-teal !important;
-}
-
-.latest-post-title {
-    color: $pli-white;
-    font-size: 24px;
-}
-
-.latest-post-desc {
-    font-size: 42px;
-    text-decoration: underline;
+    &-title {
+        color: $pli-white;
+        font-size: 24px;
+    }
+    &-desc {
+        font-size: 42px;
+        text-decoration: underline;
+    }
 }
 
 // Tablet
@@ -26,11 +24,13 @@
         width: 200px !important;
         height: auto !important;
     }
-    .latest-post-desc {
-        font-size: 28px;
-    }
-    .latest-post-title {
-        font-size: 18px;
+    .latest-post {
+        &-title {
+            font-size: 28px;
+        }
+        &-desc {
+            font-size: 18px;
+        }
     }
   }
   
@@ -40,11 +40,13 @@
         width: 80vw !important;
         height: auto !important;
     }
-    .latest-post-desc {
-        font-size: 24px;
-    }
-    .latest-post-title {
-        font-size: 18px;
+    .latest-post {
+        &-title {
+            font-size: 24px;
+        }
+        &-desc {
+            font-size: 18px;
+        }
     }
   }
   

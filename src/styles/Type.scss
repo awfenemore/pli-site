@@ -3,18 +3,14 @@
 
 // Desktop default - it just isnt really made to be read slowly on your phone. You'll be ok
 h1 {
-  font-weight: normal;
   color: $pli-white;
-  font-family: $pli-header-font;
-  font-size: 42px;
   margin-bottom: 24px;
+  font: normal normal normal 42px $pli-header-font;
 }
 
 h3 {
-  font-weight: 500;
   color: $pli-teal;
-  font-family: $pli-header-font;
-  font-size: 24px;
+  font: normal normal 500 24px $pli-header-font;
 }
 
 h5 {
@@ -24,10 +20,8 @@ h5 {
 }
 
 p {
-  font-weight: 200;
   color: $pli-white;
-  font-family: $pli-text-font;
-  font-size: 16px;
+  font: normal normal 200 16px/24px $pli-text-font;
 }
 
 .img-caption {
