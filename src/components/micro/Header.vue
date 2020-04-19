@@ -84,8 +84,8 @@
             <h4>Album of the Now</h4>
             <h5>{{ albumOfTheNow.title }} - {{ albumOfTheNow.artist }}</h5>
             <h5>Released: {{ albumOfTheNow.release }}</h5>
-            <a :href="albumOfTheNow.link" target="_blank"
-              ><h4 class="album-otn-store-link">Link</h4></a
+            <router-link to="/albumofthenow"
+              ><h4 class="album-otn-store-link">More</h4></router-link
             >
           </div>
           <div class="album-otn-right pl-2 pt-2">

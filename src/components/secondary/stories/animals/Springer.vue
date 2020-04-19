@@ -85,8 +85,12 @@
       that thing should be.
     </p>
     <p class="my-8">
-      Re-integrating a wild cetacean had never truly been attempted (see Keiko,
-      for example), and although most people had Springers’ best interests in
+      Re-integrating a wild cetacean had never truly been attempted (see
+      <a
+        href="https://en.wikipedia.org/wiki/Keiko_(killer_whale)"
+        target="_blank"
+        >Keiko</a
+      >, for example), and although most people had Springers’ best interests in
       mind, it took months to form a plan for how to move her from Puget Sound
       to somewhere safe. Some wanted to see her in an aquarium, some wanted
       nature to “take it’s course”, but enough people wanted to see her returned
@@ -101,17 +105,22 @@
     </p>
     <p class="my-8">
       After months of disagreement over how best to handle the situation (that
-      you are welcome to read about here), on June 12th 2002, Springer was
-      (gently) captured and moved to a seapen, where she could undergo medical
-      tests and eat freely to gain weight. The capture team had a lot of spent
-      time specifically getting her used to the feel of the soft ropes used, the
-      sounds of boats and boat engines, and to some human touch, to keep her as
-      calm as possible for the trials she was about to face. Springer was fed
-      around 30kg of live salmon each day, sometimes medicated, specially
-      delivered down a chute to her pen so that she never associated human
-      interaction with feeding. After a nervous wait, her medical tests returned
-      to show that she was healthy enough to return to the wild, and after
-      gaining some weight, preparations were made for her big move.
+      you are welcome to read about
+      <a
+        href="https://en.wikipedia.org/wiki/Springer_(killer_whale)"
+        target="_blank"
+        >here</a
+      >), on June 12th 2002, Springer was (gently) captured and moved to a
+      seapen, where she could undergo medical tests and eat freely to gain
+      weight. The capture team had a lot of spent time specifically getting her
+      used to the feel of the soft ropes used, the sounds of boats and boat
+      engines, and to some human touch, to keep her as calm as possible for the
+      trials she was about to face. Springer was fed around 30kg of live salmon
+      each day, sometimes medicated, specially delivered down a chute to her pen
+      so that she never associated human interaction with feeding. After a
+      nervous wait, her medical tests returned to show that she was healthy
+      enough to return to the wild, and after gaining some weight, preparations
+      were made for her big move.
     </p>
 
     <div class="article-image-container">
@@ -178,7 +187,7 @@
       health issues and huge social isolation, Springer had returned to the wild
       and contributed two of her own calves to her pod. She continues to be seen
       in the same waters and is recognised by locals through her dorsal fin and
-      distinctive markings.
+      distinctive markings (and general awesomeness).
     </p>
     <p class="my-8">
       I absolutely love Springer’s story, and it is an amazing triumph of
