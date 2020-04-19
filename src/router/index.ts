@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import VueHead from "vue-head";
 
 // Primary
 import Home from "../components/primary/Home.vue";
@@ -29,6 +30,7 @@ import Springer from "../components/secondary/stories/animals/Springer.vue";
 
 // Cetero
 
+Vue.use(VueHead);
 Vue.use(VueRouter);
 
 const routes = [
