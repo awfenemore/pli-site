@@ -78,7 +78,7 @@ import Header from "./components/micro/Header.vue";
 export default Vue.extend({
   name: "App",
   head: {
-    meta: [{ name: "theme-color", content: "#3d3d3d" }]
+    meta: [{ name: "theme-color", content: "#f5eeda" }]
   },
   components: {
     Footer,
