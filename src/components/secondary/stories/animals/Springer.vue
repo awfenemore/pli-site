@@ -13,7 +13,8 @@
           January 2002, and over 7 months was cared for, rehabilitated,
           transported, and successfully reintroduced to her wild family. She is
           seen by whale watchers every year and is rearing her second calf with
-          the pod she joined after being re-released in July 2002.
+          the pod she joined after being rehabilitated and released in July
+          2002.
         </p>
       </v-container>
     </v-card>
@@ -24,7 +25,7 @@
           src="../../../../assets/storiesImages/animals/SpringerBreachingCreditMarkSears.jpg"
         ></v-img>
         <p class="img-caption">
-          Springer Breaching - Mark Sears
+          Springer breaching - Mark Sears
         </p>
       </div>
     </div>
@@ -129,7 +130,7 @@
           src="../../../../assets/storiesImages/animals/SpringerLeapCreditNOAAFisheries.jpg"
         ></v-img>
         <p class="img-caption">
-          The Athletic Springer - NOAA Fisheries
+          The athletic springer - NOAA Fisheries
         </p>
       </div>
     </div>

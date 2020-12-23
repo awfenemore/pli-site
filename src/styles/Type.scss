@@ -3,38 +3,39 @@
 
 // Desktop default - it just isnt really made to be read slowly on your phone. You'll be ok
 h1 {
-  color: $pli-white;
+  color: $pli-forest;
   margin-bottom: 24px;
   font: normal normal normal 42px $pli-header-font;
 }
 
 h3 {
-  color: $pli-teal;
+  color: $pli-forest;
   font: normal normal 500 24px $pli-header-font;
 }
 
 h5 {
   font-weight: normal;
-  color: $pli-white;
+  color: $pli-grey;
   font-family: $pli-text-font;
 }
 
 p {
-  color: $pli-white;
+  color: $pli-grey;
   font: normal normal 200 16px/24px $pli-text-font;
 }
 
 .img-caption {
   width: 100%;
-  color: $pli-white;
+  color: $pli-grey;
   font-family: $pli-text-font !important;
+  font-weight: 700;
   font-size: 14px;
-  padding-top: 4px;
-  padding-left: 4px;
-  background-color: $pli-grey-light;
+  padding: 8px;
+  background-color: $pli-bg-biege;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-top: 2px solid $pli-white;
+  border: 1px solid $pli-forest;
+  border-top: none;
 }
 
 // Tablet

@@ -1,17 +1,79 @@
-@import '../Colours.scss';
-@import '../Fonts.scss';
+@import "../Colours.scss";
+@import "../Fonts.scss";
+@import "../Breakpoints.scss";
 
 .v-footer {
-    font-family: $pli-text-font;
-    .footer-left, .footer-mid, .footer-right {
-        color: $pli-white;
-        text-align: center;
-        padding-top: 32px;
+  font-family: $pli-text-font;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: $pli-grey;
+
+  .footer-logo {
+    width: 10%;
+  }
+
+  .footer-left {
+    width: 40%;
+    span {
+      display: block;
+      text-align: center;
     }
-    @media only screen and (max-width: 600px) {
-        .footer-left, .footer-mid, .footer-right {
-          font-size: 12px;
-          padding-top: 8px;
+  }
+
+  .footer-mid {
+    width: 40%;
+    text-align: center;
+  }
+
+  .footer-right {
+    width: 10%;
+    span {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  //Tablet
+  @media only screen and (min-width: $small) and (max-width: $med) {
+    .footer-logo {
+      width: 20%;
+    }
+    .footer-left {
+      width: 80%;
+    }
+    .footer-mid {
+      width: 70%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+    .footer-right {
+      width: 30%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+  }
+
+    //Mobile
+    @media only screen and (max-width: $small) {
+      .footer-logo {
+        width: 15%;
+        img {
+          width: 53px;
+          height: 40px;
         }
       }
+      .footer-left {
+        display: none;
+      }
+      .footer-mid {
+        width: 85%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: right;
+      }
+      .footer-right {
+        display: none;
+      }
+    }
 }

@@ -10,27 +10,23 @@
 
     <v-expand-transition>
       <div v-show="this.isProjMenuOpen" class="projects-menu">
-        <div class="inner-menu px-4 py-4">
-          <v-row>
-            <v-spacer class="d-none d-md-flex"></v-spacer>
-            <v-col cols="3" md="2" class="mx-md-4 px-md-2 px-lg-8 mx-lg-8">
-              <h4 class="menu-title mb-2 mb-lg-3">Product Design</h4>
-              <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
-            </v-col>
-            <v-col cols="3" md="2" class="mx-md-4 px-md-2 px-lg-8 mx-lg-8">
-              <h4 class="menu-title mb-2 mb-lg-3">Visual Design</h4>
-              <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
-            </v-col>
-            <v-col cols="3" md="2" class="mx-md-4 px-md-2 px-lg-8 mx-lg-8">
-              <h4 class="menu-title mb-2 mb-lg-3">Solution Design</h4>
-              <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
-            </v-col>
-            <v-col cols="3" md="2" class="mx-md-4 px-md-2 px-lg-8 mx-lg-8">
-              <h4 class="menu-title mb-2 mb-lg-3">Cetero</h4>
-              <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
-            </v-col>
-            <v-spacer class="d-none d-md-flex"></v-spacer>
-          </v-row>
+        <div class="inner-menu">
+          <div class="menu-category">
+            <h4 class="menu-title">Product Design</h4>
+            <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
+          </div>
+          <div class="menu-category">
+            <h4 class="menu-title">Visual Design</h4>
+            <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
+          </div>
+          <div class="menu-category">
+            <h4 class="menu-title">Solution Design</h4>
+            <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
+          </div>
+          <div class="menu-category">
+            <h4 class="menu-title">Cetero</h4>
+            <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
+          </div>
         </div>
         <div class="bot-border"></div>
       </div>
@@ -38,31 +34,27 @@
 
     <v-expand-transition>
       <div v-show="this.isStoriesMenuOpen" class="stories-menu">
-        <div class="inner-menu px-4 py-4">
-          <v-row>
-            <v-spacer class="d-none d-md-flex"></v-spacer>
-            <v-col cols="3" md="2" class="mx-md-4 px-md-2 px-lg-8 mx-lg-8">
-              <h4 class="menu-title mb-2 mb-lg-3">People</h4>
-              <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
-            </v-col>
-            <v-col cols="3" md="2" class="mx-md-4 px-md-2 px-lg-8 mx-lg-8">
-              <h4 class="menu-title mb-2 mb-lg-3">Animals</h4>
-              <router-link to="/stories/springer"
-                ><span class="menu-link" v-on:click="closeMenus"
-                  >Springer</span
-                ></router-link
-              >
-            </v-col>
-            <v-col cols="3" md="2" class="mx-md-4 px-md-2 px-lg-8 mx-lg-8">
-              <h4 class="menu-title mb-2 mb-lg-3">Sport</h4>
-              <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
-            </v-col>
-            <v-col cols="3" md="2" class="mx-md-4 px-md-2 px-lg-8 mx-lg-8">
-              <h4 class="menu-title mb-2 mb-lg-3">Cetero</h4>
-              <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
-            </v-col>
-            <v-spacer class="d-none d-md-flex"></v-spacer>
-          </v-row>
+        <div class="inner-menu">
+          <div class="menu-category">
+            <h4 class="menu-title">People</h4>
+            <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
+          </div>
+          <div class="menu-category">
+            <h4 class="menu-title">Animals</h4>
+            <router-link to="/stories/springer"
+              ><span class="menu-link" v-on:click="closeMenus"
+                >Springer</span
+              ></router-link
+            >
+          </div>
+          <div class="menu-category">
+            <h4 class="menu-title">Sport</h4>
+            <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
+          </div>
+          <div class="menu-category">
+            <h4 class="menu-title">Cetero</h4>
+            <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
+          </div>
         </div>
         <div class="bot-border"></div>
       </div>

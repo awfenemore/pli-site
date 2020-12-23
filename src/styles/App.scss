@@ -1,16 +1,17 @@
 @import "Colours.scss";
 @import "Type.scss";
 @import "Fonts.scss";
+@import "./Breakpoints.scss";
 
 .v-application a {
-  color: $pli-teal !important; // Consider finding a better way to do this
+  color: $pli-forest !important; // Consider finding a better way to do this
   &:visited {
-    color: $pli-orange;
+    color: $pli-coral;
   }
 }
 
 .v-content {
-  background-color: $pli-grey;
+  background-color: $pli-bg-grey;
   &__wrap {
     padding: 5vh 10vw 10vh 10vw;
   }
@@ -24,16 +25,11 @@
   }
 }
 
-.bot-border {
-  width: 100%;
-  height: 2px;
-  background-image: linear-gradient(to right, $pli-white, $pli-teal);
-}
-
+.bot-border,
 .top-border {
   width: 100%;
   height: 2px;
-  background-image: linear-gradient(to right, $pli-teal, $pli-white);
+  background-image: linear-gradient(to right, $pli-leaf, #d9f9aa, $pli-leaf);
 }
 
 ::-webkit-scrollbar {
@@ -54,27 +50,56 @@
 }
 
 .menu-link {
-  color: $pli-teal;
+  color: $pli-grey;
+  padding-left: 20%;
 }
 
 // Dropdown Menus
 
 .projects-menu,
 .stories-menu {
-  background-color: $pli-grey-light;
-  color: $pli-white;
+  background-color: $pli-bg-light-biege;
+  color: $pli-forest;
+  .inner-menu {
+    display: flex;
+    width: 100%;
+    padding: 2% 10%;
+    .menu {
+      &-category {
+        width: 25%;
+      }
+    }
+  }
+
   h4 {
-      text-align: center;
-      font: normal normal normal 18px/24px $pli-header-font; 
-    color: $pli-white;
+    text-align: center;
+    font: normal normal normal 18px/24px $pli-header-font;
+    color: $pli-forest;
+    margin-bottom: 8px;
   }
   .menu-link {
-      font-family: $pli-text-font;
+    font-family: $pli-text-font;
   }
-  @media only screen and (max-width: 600px) {
-    h4 {
-      text-align: left;
+
+  //Mobile
+  @media only screen and (max-width: $small) {
+    .menu {
+      &-link {
+        padding-left: 0;
+        font-size: 14px;
+      }
+      &-title {
+        font-size: 16px;
+        min-height: 48px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $large) {
+    .menu {
+      &-link {
+        padding-left: 0;
+      }
     }
   }
 }
-

@@ -2,39 +2,30 @@
   <div class="album">
     <h1>Album of the Now</h1>
 
-    <v-expansion-panels class="bg-grey" v-model="panel">
-      <v-expansion-panel
-        v-for="al in albumsOTN"
-        :key="al.index"
-        class="bg-grey"
-      >
-        <v-expansion-panel-header class="bg-grey"
-          ><h3>{{ al.title }} - {{ al.artist }}</h3></v-expansion-panel-header
+    <v-expansion-panels class="bg container" v-model="panel">
+      <v-expansion-panel v-for="al in albumsOTN" :key="al.index" class="bg">
+        <v-expansion-panel-header class="bg"
+          ><h3 class="header">
+            {{ al.title }} - {{ al.artist }}
+          </h3></v-expansion-panel-header
         >
-        <v-expansion-panel-content class="bg-grey">
-          <v-card class="aotn-card my-8 px-4 py-3 px-md-12 py-md-10">
-            <v-row>
-              <v-col md="4">
-                <v-img
-                  height="300"
-                  width="300"
-                  :src="al.image"
-                  class="aotn-image"
-                ></v-img
-              ></v-col>
-              <v-col md="8" class="aotn-col-right">
-                <h3 class="aotn-title">{{ al.title }}</h3>
-                <h3 class="aotn-artist">{{ al.artist }}</h3>
-                <h5 class="aotn-release-date mt-2">
-                  {{ al.release }}
-                </h5>
-                <p class="aotn-whyIlike mt-2">{{ al.whyILike }}</p>
-                <a :href="al.link" target="_blank"
-                  ><h3 class="aotn-store-link">Link</h3></a
-                >
-              </v-col></v-row
-            >
-          </v-card>
+        <v-expansion-panel-content class="bg">
+          <div class="aotn-card">
+            <div class="aotn-col-left">
+              <img :src="al.image" class="aotn-image" />
+            </div>
+            <div class="aotn-col-right">
+              <h3 class="aotn-title">{{ al.title }}</h3>
+              <h3 class="aotn-artist">{{ al.artist }}</h3>
+              <h5 class="aotn-release-date">
+                {{ al.release }}
+              </h5>
+              <p class="aotn-whyIlike">{{ al.whyILike }}</p>
+              <a :href="al.link" target="_blank"
+                ><h3 class="aotn-store-link">Link</h3></a
+              >
+            </div>
+          </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
