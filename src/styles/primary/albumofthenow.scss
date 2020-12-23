@@ -61,9 +61,16 @@
 // Tablet
 @media only screen and (min-width: 600px) and (max-width: 1264px) {
     .aotn {
+        &-col-left {
+            width: 30%;
+        }
+        &-col-right {
+            padding-left: 24px;
+            width: 70%;
+        }
         &-image {
-            width: 200px !important;
-            height: auto !important;
+            width: 100%;
+            height: auto;
         }
         &-title, &-artist {
             font-size: 28px;
@@ -80,9 +87,15 @@
   // Mobile
   @media only screen and (max-width: 600px) {
     .aotn {
-        &-image {
-            width: 80vw !important;
-            height: auto !important;
+        &-card {
+            flex-wrap: wrap;
+        }
+        &-col-left {
+            width: 100%;
+        }
+        &-col-right {
+            padding-left: 12px;
+            width: 100%;
         }
         &-title, &-artist {
             font-size: 24px;
