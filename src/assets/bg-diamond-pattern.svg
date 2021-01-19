@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+  <defs>
+    <radialGradient id="myGradient">
+      <stop offset="60%" stop-color="rgba(237, 242, 247,1)"/>
+      <stop offset="100%" stop-color="rgba(237, 242, 247,0)"/>
+    </radialGradient>
+    <pattern id="pattern" width="40" height="40" viewBox="0 0 40,40" patternUnits="userSpaceOnUse" patternTransform="rotate(45) ">
+      <rect id="pattern-background" width="400%" height="400%" fill="rgba(255, 255, 255,1)"/>
+      <path fill="rgba(237, 242, 247,1)" d="M-1 20 v20 h2 v-20zM39 20 v20 h2v-20z"/>
+      <path fill="rgba(226, 232, 240,1)" d="M-10 29.5 h60 v1 h-60z"/>
+      <path fill="rgba(237, 242, 247,1)" d="M19 0 v40 h2 v-40z"/>
+      <path fill="rgba(226, 232, 240,1)" d="M-10 9.5 h60 v1 h-60z"/>
+      <path fill="rgba(237, 242, 247,1)" d="M-1 0 v20 h2 v-20zM39 0 v20 h2 v-20z"/>
+    </pattern>
+    <mask id="mask">
+      <rect height="100%" width="100%" fill="url(#myGradient)"/>
+    </mask>
+  </defs>
+  <g mask="url(#mask)">
+    <rect fill="url(#pattern)" height="100%" width="100%"/>
+  </g>
+</svg>

@@ -13,7 +13,7 @@
 .v-content {
   background-color: $pli-bg-grey;
   &__wrap {
-    padding: 5vh 10vw 10vh 10vw;
+    padding: 5vh 10vw 5vh 10vw;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -58,12 +58,12 @@
 
 .projects-menu,
 .stories-menu {
-  background-color: $pli-bg-light-biege;
+  background-color: $pli-bg-grey;
   color: $pli-forest;
   .inner-menu {
     display: flex;
     width: 100%;
-    padding: 2% 10%;
+    padding: 1% 10%;
     .menu {
       &-category {
         width: 25%;

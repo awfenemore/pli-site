@@ -1,16 +1,43 @@
 @import '../Type.scss';
+@import '../Breakpoints.scss';
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 3vh 5vw 0 5vw;
+}
+
+.text-container {
+    padding: 0 250px;
+}
 
 .preview-image {
-    width: 100%;
+    width: 90%;
     height: auto;
+    border-radius: 50%;
 }
 
 .latest-post {
-    background-color: $pli-bg-biege !important;
-    border: 2px solid $pli-leaf !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 40px;
+    padding: 100px 250px;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0ibXlHcmFkaWVudCI+CiAgICAgIDxzdG9wIG9mZnNldD0iNjAlIiBzdG9wLWNvbG9yPSJyZ2JhKDIzNywgMjQyLCAyNDcsMSkiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSJyZ2JhKDIzNywgMjQyLCAyNDcsMCkiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cGF0dGVybiBpZD0icGF0dGVybiIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgNDAsNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkgIj4KICAgICAgPHJlY3QgaWQ9InBhdHRlcm4tYmFja2dyb3VuZCIgd2lkdGg9IjQwMCUiIGhlaWdodD0iNDAwJSIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LDEpIi8+CiAgICAgIDxwYXRoIGZpbGw9InJnYmEoMjM3LCAyNDIsIDI0NywxKSIgZD0iTS0xIDIwIHYyMCBoMiB2LTIwek0zOSAyMCB2MjAgaDJ2LTIweiIvPgogICAgICA8cGF0aCBmaWxsPSJyZ2JhKDIyNiwgMjMyLCAyNDAsMSkiIGQ9Ik0tMTAgMjkuNSBoNjAgdjEgaC02MHoiLz4KICAgICAgPHBhdGggZmlsbD0icmdiYSgyMzcsIDI0MiwgMjQ3LDEpIiBkPSJNMTkgMCB2NDAgaDIgdi00MHoiLz4KICAgICAgPHBhdGggZmlsbD0icmdiYSgyMjYsIDIzMiwgMjQwLDEpIiBkPSJNLTEwIDkuNSBoNjAgdjEgaC02MHoiLz4KICAgICAgPHBhdGggZmlsbD0icmdiYSgyMzcsIDI0MiwgMjQ3LDEpIiBkPSJNLTEgMCB2MjAgaDIgdi0yMHpNMzkgMCB2MjAgaDIgdi0yMHoiLz4KICAgIDwvcGF0dGVybj4KICAgIDxtYXNrIGlkPSJtYXNrIj4KICAgICAgPHJlY3QgaGVpZ2h0PSIxMDAlIiB3aWR0aD0iMTAwJSIgZmlsbD0idXJsKCNteUdyYWRpZW50KSIvPgogICAgPC9tYXNrPgogIDwvZGVmcz4KICA8ZyBtYXNrPSJ1cmwoI21hc2spIj4KICAgIDxyZWN0IGZpbGw9InVybCgjcGF0dGVybikiIGhlaWdodD0iMTAwJSIgd2lkdGg9IjEwMCUiLz4KICA8L2c+Cjwvc3ZnPgo=");
+        .left {
+        width: 30%;
+    }
+    .right {
+        padding-left: 12px;
+        width: 70%;
+    }
     &-title {
         color: $pli-grey;
         font-size: 24px;
+        text-align: right;
+        margin-bottom: 24px;
     }
     &-desc {
         font-size: 42px;
@@ -18,35 +45,86 @@
     }
 }
 
+
+//TODO fix these disgraceful breakpoints adam jesus christ
+
 // Tablet
 @media only screen and (min-width: 600px) and (max-width: 1264px) {
     .preview-image {
-        width: 200px !important;
+        width: 90% !important;
         height: auto !important;
     }
     .latest-post {
+        padding: 100px 150px;
         &-title {
-            font-size: 28px;
+            font-size: 22px;
         }
         &-desc {
             font-size: 18px;
         }
+        .right p {
+            font-size: 15px;
+        }
+    }
+    .text-container {
+        padding: 0 150px;
     }
   }
   
-  // Mobile
-  @media only screen and (max-width: 600px) {
-    .preview-image {
-        width: 80vw !important;
-        height: auto !important;
-    }
+// Mobile
+@media only screen and (max-width: $med) {
     .latest-post {
+        .left {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 16px;
+        }
+        .right {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+        }
         &-title {
             font-size: 24px;
+            text-align: center;
         }
         &-desc {
             font-size: 18px;
         }
+    }
+    .text-container {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: $med) and (max-width: $large) {
+    .latest-post {
+        padding: 65px 100px;
+
+    }
+    .text-container {
+        padding: 0 100px;
+    }
+  }
+
+  @media only screen and (max-width: $small) {
+    .latest-post {
+        padding: 0;
+
+    }
+    .text-container {
+        padding: 0;
+    }
+  }
+
+  @media only screen and (min-width: $small) and (max-width: $med) {
+    .latest-post {
+        padding: 65px 100px;
+
+    }
+    .text-container {
+        padding: 0;
     }
   }
   
